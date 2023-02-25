@@ -7,16 +7,24 @@ public class Entry {
     LocalTime timeOfSleep;
     int quality;
     int clarity;
-    boolean Lucidity;
-    Mood thisMood;
+    boolean lucidity;
+    public enum Mood{
+        NIGHTMARE,
+        SAD,
+        NEUTRAL,
+        HAPPY,
+        ECSTATIC
+    }
+    Mood entryMood;
 
-    public Entry(String note, int quality, int clarity, boolean lucidity, Mo) {
+    public Entry(String note, int quality, int clarity, boolean lucidity, Mood currentMood) {
         this.note = note;
         this.timestamp = LocalDateTime.now();
         this.timeOfSleep = LocalTime.now();
         this.quality = quality;
         this.clarity = clarity;
-        Lucidity = lucidity;
+        this.lucidity = lucidity;
+        this.entryMood = currentMood;
     }
 
     public void publish(){
@@ -52,7 +60,45 @@ public class Entry {
         return clarity;
     }
 
-    public boolean isLucidity() {
-        return Lucidity;
+    public boolean isLucid() {
+        return lucidity;
     }
+
+    public Mood getEntryMood(){
+        return entryMood;
+    }
+
+    public void setNote(String note) {
+        this.note = note;
+    }
+
+    public void setQuality(int quality) {
+        this.quality = quality;
+    }
+
+    public void setClarity(int clarity) {
+        this.clarity = clarity;
+    }
+
+    public void setLucidity(boolean lucidity) {
+        this.lucidity = lucidity;
+    }
+
+    public void setEntryMood(Mood entryMood) {
+        this.entryMood = entryMood;
+    }
+
+    @Override
+    public String toString() {
+        return "Entry{" +
+                "\n\tnote='" + note + '\'' +
+                ",\n\ttimestamp=" + timestamp +
+                ",\n\ttimeOfSleep=" + timeOfSleep +
+                ",\n\tquality=" + quality +
+                ",\n\tclarity=" + clarity +
+                ",\n\tLucidity=" + lucidity +
+                ",\n\tentryMood=" + entryMood +
+                "\n}";
+    }
+
 }
