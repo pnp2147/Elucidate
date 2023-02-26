@@ -1,3 +1,5 @@
+package com.example.elucidate;
+
 import androidx.room.*;
 
 import com.example.elucidate.ui.Entry;

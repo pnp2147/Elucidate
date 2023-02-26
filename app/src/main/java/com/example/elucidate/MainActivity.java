@@ -13,6 +13,7 @@ import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
 import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.room.Room;
 
 import com.example.elucidate.databinding.ActivityMainBinding;
 
@@ -27,6 +28,10 @@ public class MainActivity extends AppCompatActivity {
 
         binding = ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
+
+        //Database object creation
+        AppDatabase db = Room.databaseBuilder(getApplicationContext(),
+                AppDatabase.class, "Elucidity-Data").build();
 
         setSupportActionBar(binding.appBarMain.toolbar);
 

@@ -1,5 +1,7 @@
 package com.example.elucidate.ui;
 
+import com.example.elucidate.EntryDao;
+
 import java.util.*;
 
 /**
@@ -10,6 +12,7 @@ public class Search {
     ArrayList<Entry> entryList;
     ArrayList<Entry> resultList;
     Entry.Mood thisMood;
+    EntryDao entryDao;
 
     public void Search(String word) {
         this.word = word;
