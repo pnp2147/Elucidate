@@ -6,7 +6,7 @@
     android:layout_height="match_parent">
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/textjournal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="152dp"
@@ -22,17 +22,16 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="146dp"
         android:layout_marginBottom="46dp"
-        android:background="@color/teal_200"
-        android:backgroundTint="#4A0909"
+
         android:text="Add Entry"
-        app:iconTint="#CF2929"
+
         app:iconTintMode="add"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:rippleColor="#220303"
-        app:strokeColor="#9E1313" />
+         />
 
     <ScrollView
+        android:id="@+id/scrollable"
         android:layout_width="409dp"
         android:layout_height="571dp"
         android:layout_marginStart="1dp"
@@ -40,7 +39,28 @@
         android:contentDescription="History"
         android:visibility="visible"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2"
-        tools:visibility="visible"/>
+        app:layout_constraintTop_toBottomOf="@+id/textjournal"
+        tools:visibility="visible">
+        <LinearLayout
+            android:id="@+id/scrollablelinear"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+<!--             <Button-->
+<!--            android:id="@+id/entry1"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:text="Button" />-->
+<!--            <Button-->
+<!--                android:id="@+id/entry2"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:text="Button" />-->
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
