@@ -8,7 +8,9 @@
     <string name="menu_journal">Journal</string>
     <string name="menu_statistics">Statistics</string>
     <string name="menu_wiki">Wiki</string>
-<!--    <string name="menu_home">Home</string>-->
+    <string name="add_entry">Add Entry</string>
+    <string name="journals">Journals</string>
+    <!--    <string name="menu_home">Home</string>-->
 <!--    <string name="menu_gallery">Gallery</string>-->
 <!--    <string name="menu_slideshow">Slideshow</string>-->
 </resources>

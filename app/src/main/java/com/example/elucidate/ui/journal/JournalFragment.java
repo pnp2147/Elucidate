@@ -1,5 +1,6 @@
 package com.example.elucidate.ui.journal;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.AttributeSet;
 import android.view.LayoutInflater;
@@ -10,10 +11,14 @@ import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentTransaction;
 import androidx.lifecycle.ViewModelProvider;
 
+import com.example.elucidate.R;
 import com.example.elucidate.databinding.FragmentJournalBinding;
 import com.example.elucidate.ui.Entry;
+import com.example.elucidate.ui.newentry.NewEntryFragment;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -41,6 +46,18 @@ public class JournalFragment extends Fragment {
         View root = binding.getRoot();
         final TextView textView = binding.textjournal;
         journalViewModel.getText().observe(getViewLifecycleOwner(), textView::setText);
+
+//        binding.button.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                Fragment newFragment = new NewEntryFragment();
+//                FragmentManager fragmentManager = requireActivity().getSupportFragmentManager();
+//                FragmentTransaction transaction = fragmentManager.beginTransaction();
+//                transaction.replace(R.id., newFragment,null);
+//                transaction.addToBackStack(null);
+//                transaction.commit();
+//            }
+//        });
 
         // Iterate through the list of entries and create buttons with the text
         for(Entry e : data){
