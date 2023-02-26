@@ -14,6 +14,8 @@ import androidx.lifecycle.ViewModelProvider;
 import com.example.elucidate.databinding.FragmentHomeBinding;
 import com.example.elucidate.databinding.FragmentJournalBinding;
 
+import java.util.List;
+
 public class JournalFragment extends Fragment {
 
     private FragmentJournalBinding binding;
@@ -27,6 +29,8 @@ public class JournalFragment extends Fragment {
         View root = binding.getRoot();
         final TextView textView = binding.textjournal;
         journalViewModel.getText().observe(getViewLifecycleOwner(), textView::setText);
+
+
         for(int i=0;i<5;i++){
             Button b = new Button(binding.scrollable.getContext());
             b.setOnClickListener(new View.OnClickListener() {
