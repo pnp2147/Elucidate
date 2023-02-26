@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -24,9 +25,20 @@ public class JournalFragment extends Fragment {
 
         binding = FragmentJournalBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
-
         final TextView textView = binding.textjournal;
         journalViewModel.getText().observe(getViewLifecycleOwner(), textView::setText);
+        for(int i=0;i<5;i++){
+            Button b = new Button(binding.scrollable.getContext());
+            b.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    System.out.println("you have clicked "+b.toString());
+                }
+            });
+            binding.scrollablelinear.addView(b);
+
+        }
+
         return root;
 
     }
