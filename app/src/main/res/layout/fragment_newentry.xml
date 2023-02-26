@@ -5,82 +5,73 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/textInputLayout"
-        android:layout_width="409dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="1dp"
-        android:layout_marginTop="204dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+<!--    <TextView-->
+<!--        android:id="@+id/textView3"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginStart="67dp"-->
+<!--        android:layout_marginTop="35dp"-->
+<!--        android:text="Tell us about your Dreams"-->
+<!--        android:textAppearance="@style/TextAppearance.AppCompat.Large"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent" />-->
 
-        <com.google.android.material.textfield.TextInputEditText
-            android:layout_width="match_parent"
-            android:layout_height="137dp"
-            android:hint="Enter your Dream..."
-            android:selectAllOnFocus="false"
-            android:singleLine="false" />
-    </com.google.android.material.textfield.TextInputLayout>
+<!--    <TextView-->
+<!--        android:id="@+id/editTextTextPersonName"-->
+<!--        android:layout_width="210px"-->
+<!--        android:layout_height="80px"-->
+<!--        android:layout_marginStart="16dp"-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        android:ems="10"-->
+<!--        android:text="Lucid"-->
+<!--        android:textSize="20sp"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/textInputEditText" />-->
 
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="67dp"
-        android:layout_marginTop="35dp"
-        android:text="Tell us about your Dreams"
-        android:textAppearance="@style/TextAppearance.AppCompat.Large"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+<!--    <TextView-->
+<!--        android:id="@+id/editTextTextPersonName2"-->
+<!--        android:layout_width="210px"-->
+<!--        android:layout_height="80px"-->
+<!--        android:layout_marginStart="16dp"-->
+<!--        android:layout_marginTop="40dp"-->
+<!--        android:ems="10"-->
+<!--        android:text="Clarity"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName"-->
+<!--        tools:ignore="MissingConstraints" />-->
 
-    <EditText
-        android:id="@+id/editTextTextPersonName"
-        android:layout_width="200px"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="15dp"
-        android:layout_marginTop="52dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Lucid"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textInputLayout" />
+<!--    <TextView-->
+<!--        android:id="@+id/editTextTextPersonName5"-->
+<!--        android:layout_width="210px"-->
+<!--        android:layout_height="80px"-->
+<!--        android:layout_marginStart="16dp"-->
+<!--        android:layout_marginTop="40dp"-->
+<!--        android:ems="10"-->
+<!--        android:text="Quality"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName2"-->
+<!--        tools:ignore="MissingConstraints" />-->
 
-    <EditText
-        android:id="@+id/editTextTextPersonName2"
-        android:layout_width="200px"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="132dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Clarity"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textInputLayout"
-        tools:ignore="MissingConstraints" />
+<!--    <TextView-->
+<!--        android:id="@+id/editTextTextPersonName7"-->
+<!--        android:layout_width="210px"-->
+<!--        android:layout_height="80px"-->
+<!--        android:layout_marginStart="16dp"-->
+<!--        android:layout_marginTop="40dp"-->
+<!--        android:ems="10"-->
+<!--        android:text="Mood"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName5" />-->
 
-    <EditText
-        android:id="@+id/editTextTextPersonName5"
-        android:layout_width="200px"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="15dp"
-        android:layout_marginTop="220dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Quality"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textInputLayout"
-        tools:ignore="MissingConstraints" />
-
-    <EditText
-        android:id="@+id/editTextTextPersonName7"
-        android:layout_width="200px"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="15dp"
-        android:layout_marginTop="652dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Mood"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+<!--    <com.google.android.material.textfield.TextInputEditText-->
+<!--        android:id="@+id/textInputEditText"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="137dp"-->
+<!--        android:layout_marginTop="35dp"-->
+<!--        android:hint="Enter your Dream..."-->
+<!--        android:selectAllOnFocus="false"-->
+<!--        android:singleLine="false"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/textView3"-->
+<!--        tools:layout_editor_absoluteX="0dp" />-->
 
 </androidx.constraintlayout.widget.ConstraintLayout>

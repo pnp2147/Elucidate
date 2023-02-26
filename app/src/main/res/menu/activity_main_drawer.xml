@@ -8,5 +8,9 @@
             android:id="@+id/nav_journal"
             android:icon="@drawable/ic_menu_camera"
             android:title="Journal" />
+        <item
+            android:id="@+id/nav_newEntry"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="New Entry" />
     </group>
 </menu>
