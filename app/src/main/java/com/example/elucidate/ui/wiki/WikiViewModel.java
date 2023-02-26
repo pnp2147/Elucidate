@@ -1,16 +1,16 @@
-package com.example.elucidate.ui.journal;
+package com.example.elucidate.ui.wiki;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
 
-public class JournalViewModel extends ViewModel {
+public class WikiViewModel extends ViewModel {
 
     private final MutableLiveData<String> mText;
 
-    public JournalViewModel() {
+    public WikiViewModel() {
         mText = new MutableLiveData<>();
-        mText.setValue("Your dreams");
+        mText.setValue("Wiki");
     }
 
     public LiveData<String> getText() {

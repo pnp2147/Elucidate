@@ -1,16 +1,16 @@
-package com.example.elucidate.ui.journal;
+package com.example.elucidate.ui.statistics;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
 
-public class JournalViewModel extends ViewModel {
+public class StatisticsViewModel extends ViewModel {
 
     private final MutableLiveData<String> mText;
 
-    public JournalViewModel() {
+    public StatisticsViewModel() {
         mText = new MutableLiveData<>();
-        mText.setValue("Your dreams");
+        mText.setValue("Statistics");
     }
 
     public LiveData<String> getText() {

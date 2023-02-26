@@ -8,5 +8,15 @@
             android:id="@+id/nav_journal"
             android:icon="@drawable/ic_menu_camera"
             android:title="Journal" />
+
+        <item
+            android:id="@+id/nav_statistics"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="Statistics" />
+
+        <item
+            android:id="@+id/nav_wiki"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="Wiki" />
     </group>
 </menu>
