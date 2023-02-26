@@ -2,6 +2,9 @@ package com.example.elucidate.ui;
 
 import java.util.*;
 
+/**
+ * This class will no longer be needed as we're using SQL database now
+ */
 public class Search {
     String word;
     ArrayList<Entry> entryList;

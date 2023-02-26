@@ -35,6 +35,8 @@ android {
 }
 
 dependencies {
+    implementation 'androidx.room:room-common:2.4.2'
+
     // Room database
     def room_version = "2.5.0"
 

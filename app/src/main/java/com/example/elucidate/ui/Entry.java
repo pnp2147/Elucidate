@@ -2,18 +2,35 @@ package com.example.elucidate.ui;
 
 import android.os.Build;
 
+import androidx.room.ColumnInfo;
+import androidx.room.Entity;
+import androidx.room.Fts4;
+import androidx.room.PrimaryKey;
+
 import java.time.LocalDateTime;
 import java.time.LocalTime;
 
+@Fts4
+@Entity(tableName = "Entry")
 public class Entry {
+    @PrimaryKey
+    private int id;
+
+    @ColumnInfo(name = "Name")
+    String name;
+    @ColumnInfo(name = "Note")
     String note;
+    @ColumnInfo(name = "timeStamp")
     LocalDateTime timestamp;
+    @ColumnInfo(name = "Time_of_Sleep")
     LocalTime timeOfSleep;
+    @ColumnInfo(name = "Quality")
     int quality;
+    @ColumnInfo(name = "Clarity")
     int clarity;
+    @ColumnInfo(name = "Lucidity")
     boolean lucidity;
 
-    String name;
     public enum Mood{
         NIGHTMARE,
         SAD,
@@ -21,6 +38,7 @@ public class Entry {
         HAPPY,
         ECSTATIC
     }
+    @ColumnInfo(name = "Mood")
     Mood entryMood;
 
     public Entry(String note, int quality, int clarity, boolean lucidity, Mood currentMood) {
