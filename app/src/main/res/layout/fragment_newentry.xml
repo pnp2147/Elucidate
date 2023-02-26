@@ -5,73 +5,73 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-<!--    <TextView-->
-<!--        android:id="@+id/textView3"-->
-<!--        android:layout_width="wrap_content"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:layout_marginStart="67dp"-->
-<!--        android:layout_marginTop="35dp"-->
-<!--        android:text="Tell us about your Dreams"-->
-<!--        android:textAppearance="@style/TextAppearance.AppCompat.Large"-->
-<!--        app:layout_constraintStart_toStartOf="parent"-->
-<!--        app:layout_constraintTop_toTopOf="parent" />-->
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="67dp"
+        android:layout_marginTop="35dp"
+        android:text="Tell us about your Dreams"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
-<!--    <TextView-->
-<!--        android:id="@+id/editTextTextPersonName"-->
-<!--        android:layout_width="210px"-->
-<!--        android:layout_height="80px"-->
-<!--        android:layout_marginStart="16dp"-->
-<!--        android:layout_marginTop="10dp"-->
-<!--        android:ems="10"-->
-<!--        android:text="Lucid"-->
-<!--        android:textSize="20sp"-->
-<!--        app:layout_constraintStart_toStartOf="parent"-->
-<!--        app:layout_constraintTop_toBottomOf="@+id/textInputEditText" />-->
+    <TextView
+        android:id="@+id/editTextTextPersonName"
+        android:layout_width="210px"
+        android:layout_height="80px"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:text="Lucid"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInputEditText" />
 
-<!--    <TextView-->
-<!--        android:id="@+id/editTextTextPersonName2"-->
-<!--        android:layout_width="210px"-->
-<!--        android:layout_height="80px"-->
-<!--        android:layout_marginStart="16dp"-->
-<!--        android:layout_marginTop="40dp"-->
-<!--        android:ems="10"-->
-<!--        android:text="Clarity"-->
-<!--        app:layout_constraintStart_toStartOf="parent"-->
-<!--        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName"-->
-<!--        tools:ignore="MissingConstraints" />-->
+    <TextView
+        android:id="@+id/editTextTextPersonName2"
+        android:layout_width="210px"
+        android:layout_height="80px"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="40dp"
+        android:ems="10"
+        android:text="Clarity"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName"
+        tools:ignore="MissingConstraints" />
 
-<!--    <TextView-->
-<!--        android:id="@+id/editTextTextPersonName5"-->
-<!--        android:layout_width="210px"-->
-<!--        android:layout_height="80px"-->
-<!--        android:layout_marginStart="16dp"-->
-<!--        android:layout_marginTop="40dp"-->
-<!--        android:ems="10"-->
-<!--        android:text="Quality"-->
-<!--        app:layout_constraintStart_toStartOf="parent"-->
-<!--        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName2"-->
-<!--        tools:ignore="MissingConstraints" />-->
+    <TextView
+        android:id="@+id/editTextTextPersonName5"
+        android:layout_width="210px"
+        android:layout_height="80px"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="40dp"
+        android:ems="10"
+        android:text="Quality"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName2"
+        tools:ignore="MissingConstraints" />
 
-<!--    <TextView-->
-<!--        android:id="@+id/editTextTextPersonName7"-->
-<!--        android:layout_width="210px"-->
-<!--        android:layout_height="80px"-->
-<!--        android:layout_marginStart="16dp"-->
-<!--        android:layout_marginTop="40dp"-->
-<!--        android:ems="10"-->
-<!--        android:text="Mood"-->
-<!--        app:layout_constraintStart_toStartOf="parent"-->
-<!--        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName5" />-->
+    <TextView
+        android:id="@+id/editTextTextPersonName7"
+        android:layout_width="210px"
+        android:layout_height="80px"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="40dp"
+        android:ems="10"
+        android:text="Mood"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName5" />
 
-<!--    <com.google.android.material.textfield.TextInputEditText-->
-<!--        android:id="@+id/textInputEditText"-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="137dp"-->
-<!--        android:layout_marginTop="35dp"-->
-<!--        android:hint="Enter your Dream..."-->
-<!--        android:selectAllOnFocus="false"-->
-<!--        android:singleLine="false"-->
-<!--        app:layout_constraintTop_toBottomOf="@+id/textView3"-->
-<!--        tools:layout_editor_absoluteX="0dp" />-->
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/textInputEditText"
+        android:layout_width="match_parent"
+        android:layout_height="137dp"
+        android:layout_marginTop="35dp"
+        android:hint="Enter your Dream..."
+        android:selectAllOnFocus="false"
+        android:singleLine="false"
+        app:layout_constraintTop_toBottomOf="@+id/textView3"
+        tools:layout_editor_absoluteX="0dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

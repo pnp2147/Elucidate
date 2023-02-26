@@ -29,7 +29,7 @@ public class NewEntryFragment extends Fragment {
         NewEntryViewModel newEntryViewModel =
                 new ViewModelProvider(this).get(NewEntryViewModel.class);
 
-//        binding = FragmentNewentryBinding.inflate(inflater, container, false);
+        binding = FragmentNewentryBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
 
         return root;
