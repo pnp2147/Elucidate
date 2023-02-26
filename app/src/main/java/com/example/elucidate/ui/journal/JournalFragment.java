@@ -28,6 +28,8 @@ public class JournalFragment extends Fragment {
                              ViewGroup container, Bundle savedInstanceState) {
         JournalViewModel journalViewModel =
                 new ViewModelProvider(this).get(JournalViewModel.class);
+
+        // Hardcoded list of entries
         data=new ArrayList<>();
         data.add(new Entry("Hello World",3,2,true, Entry.Mood.ECSTATIC));
         data.add(new Entry("Hello World 2",3,2,true, Entry.Mood.ECSTATIC));
@@ -39,6 +41,8 @@ public class JournalFragment extends Fragment {
         View root = binding.getRoot();
         final TextView textView = binding.textjournal;
         journalViewModel.getText().observe(getViewLifecycleOwner(), textView::setText);
+
+        // Iterate through the list of entries and create buttons with the text
         for(Entry e : data){
             Button b = new Button(binding.scrollable.getContext());
             b.setText(e.getName());

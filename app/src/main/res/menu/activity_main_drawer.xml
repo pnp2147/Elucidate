@@ -12,5 +12,15 @@
             android:id="@+id/nav_newEntry"
             android:icon="@drawable/ic_menu_camera"
             android:title="New Entry" />
+
+        <item
+            android:id="@+id/nav_statistics"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="Statistics" />
+
+        <item
+            android:id="@+id/nav_wiki"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="Wiki" />
     </group>
 </menu>

@@ -8,7 +8,7 @@
     <fragment
         android:id="@+id/nav_journal"
         android:name="com.example.elucidate.ui.journal.JournalFragment"
-        android:label="@string/menu_slideshow"
+        android:label="@string/menu_journal"
         tools:layout="@layout/fragment_journal" />
 
     <fragment
@@ -16,5 +16,17 @@
         android:name="com.example.elucidate.ui.newentry.NewEntryFragment"
         android:label="New Entry"
         tools:layout="@layout/fragment_newentry"/>
+
+    <fragment
+        android:id="@+id/nav_statistics"
+        android:name="com.example.elucidate.ui.statistics.StatisticsFragment"
+        android:label="@string/menu_statistics"
+        tools:layout="@layout/fragment_statistics" />
+
+    <fragment
+        android:id="@+id/nav_wiki"
+        android:name="com.example.elucidate.ui.wiki.WikiFragment"
+        android:label="@string/menu_wiki"
+        tools:layout="@layout/fragment_wiki" />
 
 </navigation>
