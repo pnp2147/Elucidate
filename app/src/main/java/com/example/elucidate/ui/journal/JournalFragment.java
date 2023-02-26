@@ -11,20 +11,21 @@ import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
 
 import com.example.elucidate.databinding.FragmentHomeBinding;
+import com.example.elucidate.databinding.FragmentJournalBinding;
 
 public class JournalFragment extends Fragment {
 
-    private FragmentHomeBinding binding;
+    private FragmentJournalBinding binding;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
         JournalViewModel journalViewModel =
                 new ViewModelProvider(this).get(JournalViewModel.class);
 
-        binding = FragmentHomeBinding.inflate(inflater, container, false);
+        binding = FragmentJournalBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
 
-        final TextView textView = binding.textHome;
+        final TextView textView = binding.textjournal;
         journalViewModel.getText().observe(getViewLifecycleOwner(), textView::setText);
         return root;
 

@@ -25,8 +25,9 @@
 
     <fragment
         android:id="@+id/nav_journal"
-        android:name="com.example.elucidate.ui.slideshow.SlideshowFragment"
+        android:name="com.example.elucidate.ui.journal.JournalFragment"
         android:label="@string/menu_slideshow"
         tools:layout="@layout/fragment_journal" />
+
 
 </navigation>
