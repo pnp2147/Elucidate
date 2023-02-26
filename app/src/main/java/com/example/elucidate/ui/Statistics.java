@@ -1,3 +1,5 @@
+package com.example.elucidate.ui;
+
 import java.util.ArrayList;
 
 public class Statistics {

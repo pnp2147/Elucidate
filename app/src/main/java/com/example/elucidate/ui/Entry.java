@@ -1,3 +1,7 @@
+package com.example.elucidate.ui;
+
+import android.os.Build;
+
 import java.time.LocalDateTime;
 import java.time.LocalTime;
 
@@ -8,6 +12,8 @@ public class Entry {
     int quality;
     int clarity;
     boolean lucidity;
+
+    String name;
     public enum Mood{
         NIGHTMARE,
         SAD,
@@ -19,12 +25,18 @@ public class Entry {
 
     public Entry(String note, int quality, int clarity, boolean lucidity, Mood currentMood) {
         this.note = note;
-        this.timestamp = LocalDateTime.now();
-        this.timeOfSleep = LocalTime.now();
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+            this.timestamp = LocalDateTime.now();
+        }
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+            this.timeOfSleep = LocalTime.now();
+        }
         this.quality = quality;
         this.clarity = clarity;
         this.lucidity = lucidity;
         this.entryMood = currentMood;
+
+        this.name=this.timestamp.toString();
     }
 
     public void publish(){
@@ -72,6 +84,10 @@ public class Entry {
         this.note = note;
     }
 
+    public String getName() {
+        return name;
+    }
+
     public void setQuality(int quality) {
         this.quality = quality;
     }
@@ -90,7 +106,7 @@ public class Entry {
 
     @Override
     public String toString() {
-        return "Entry{" +
+        return "com.example.elucidate.ui.Entry{" +
                 "\n\tnote='" + note + '\'' +
                 ",\n\ttimestamp=" + timestamp +
                 ",\n\ttimeOfSleep=" + timeOfSleep +
